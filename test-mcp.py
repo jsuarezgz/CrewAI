@@ -48,22 +48,15 @@ analyst = Agent(
 
 # Creating Tasks
 analysis_task = Task(
-    description=(
-        "1. Vulnerability Identification:"
-        "- Review results from penetration tests, static code analysis tools, and cloud security scanners."
-        "- Stay updated on emerging threats, CVEs, zero-days, and vendor disclosur"
-        "2. Assessment & Triage:"
-        "- Analyze and validate vulnerabilities to determine severity, exploitability, and potential business impact."
-        "- Eliminate false positives and duplicate findings to reduce noise."
-        "Prioritize vulnerabilities based on risk factors such as CVSS scores, EPSS predictions, asset criticality, and exposure level."
-        "3. Collaboration & Remediation Support:"
-        " - Work closely with IT, development, DevOps, and infrastructure teams to advise on remediation strategies."
-        "- Open, track, and manage tickets in systems like Jira, ServiceNow, or Remedy."
-        "- Monitor patching cycles, configuration changes, and compensating controls."
-        "4. Reporting & Communication"
-        "- Generate reports for technical teams, management, and compliance auditors."
-        "- Escalate high-risk vulnerabilities and communicate clearly with stakeholders about timelines and risk posture."
-        "- Support regulatory audits by maintaining accurate records of findings and remediations."
+    description=( """
+        1. Vulnerability Identification:
+           - Review results from penetration tests, static code analysis tools, and cloud security scanners."
+           - Stay updated on emerging threats, CVEs, zero-days, and vendor disclosur"
+        2. Assessment & Triage:"
+           - Analyze and validate vulnerabilities to determine severity, exploitability, and potential business impact."
+           - Eliminate false positives and duplicate findings to reduce noise."
+           -Prioritize vulnerabilities based on risk factors such as CVSS scores, EPSS predictions, asset criticality, and exposure level."
+    """
     ),
     expected_output=(
         "A structured and actionable Vulnerability Assessment Report (or Risk Report), which provides clear insight into discovered security weaknesses, their potential impact, and recommended remediation steps"
