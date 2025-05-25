@@ -29,7 +29,7 @@ dojo_server_adapter = MCPServerAdapter(dojo_serverparams)
 
 git_serverparams = StdioServerParameters(
     command="uvx",
-    args=["../mcp-servers/src/git/mcp-server-git"], # This runs the MCP server installed via uvx
+    args=["../mcp-servers/src/git"], # This runs the MCP server installed via uvx
 )
 git_server_adapter = MCPServerAdapter(git_serverparams)
 
@@ -84,7 +84,7 @@ fix_agent = Agent(
 )
 
 # Creating Tasks
-audit_tast = Task(
+audit_task = Task(
     description="Write a Python function to calculate the Fibonacci sequence up to the 10th number and print the result.",
     expected_output="The Fibonacci sequence up to the 10th number.",
     agent=hacker_agent,
@@ -112,7 +112,7 @@ analysis_task = Task(
     agent=analyst_agent
 )
 
-analysis_task = Task(
+remediation_task = Task(
     description=(
         """
         1. Collaboration & Remediation Support:
